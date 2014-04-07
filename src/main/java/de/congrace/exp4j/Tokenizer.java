@@ -99,7 +99,7 @@ class Tokenizer {
 				int offset = 1;
 				while (chars.length > i + offset
 						&& (Character.isLetter(chars[i + offset]) || Character.isDigit(chars[i + offset]) || chars[i
-								+ offset] == '_')) {
+								+ offset] == '_' || chars[i + offset] == '.') ) {
 					nameBuilder.append(chars[i + offset++]);
 				}
 				String name = nameBuilder.toString();
